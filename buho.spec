@@ -1,5 +1,5 @@
 Name:		buho
-Version:	1.2.1
+Version:	1.2.2
 Release:	1
 Source0:	https://invent.kde.org/maui/buho/-/archive/v%{version}/buho-v%{version}.tar.bz2
 Group:		Applications/Productivity
