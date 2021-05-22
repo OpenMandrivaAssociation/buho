@@ -20,6 +20,7 @@ BuildRequires:	cmake(KF5I18n)
 BuildRequires:	cmake(KF5Attica)
 BuildRequires:	cmake(KF5SyntaxHighlighting)
 BuildRequires:	cmake(MauiKit)
+BuildRequires:  cmake(MauiKitFileBrowsing)
 
 %description
 Note taking app for Plasma Mobile
