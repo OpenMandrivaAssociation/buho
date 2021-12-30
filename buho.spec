@@ -1,5 +1,5 @@
 Name:		buho
-Version:	1.2.2
+Version:	2.1.0
 Release:	1
 Source0:	https://invent.kde.org/maui/buho/-/archive/v%{version}/buho-v%{version}.tar.bz2
 Group:		Applications/Productivity
@@ -21,6 +21,7 @@ BuildRequires:	cmake(KF5Attica)
 BuildRequires:	cmake(KF5SyntaxHighlighting)
 BuildRequires:	cmake(MauiKit)
 BuildRequires:  cmake(MauiKitFileBrowsing)
+BuildRequires:  cmake(MauiKitAccounts)
 
 %description
 Note taking app for Plasma Mobile
