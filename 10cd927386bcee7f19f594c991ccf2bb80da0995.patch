@@ -1,0 +1,42 @@
+From 10cd927386bcee7f19f594c991ccf2bb80da0995 Mon Sep 17 00:00:00 2001
+From: Camilo Higuita <chiguitar@unal.edu.co>
+Date: Tue, 28 Dec 2021 16:49:12 -0500
+Subject: [PATCH] bump version and mauikitlatest fix changes
+
+---
+ CMakeLists.txt                | 3 +--
+ src/views/notes/NotesView.qml | 2 +-
+ 2 files changed, 2 insertions(+), 3 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index ad86ce0..0f7c3f1 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -5,11 +5,10 @@
+ 
+ cmake_minimum_required(VERSION 3.16)
+ 
+-set(BUHO_VERSION 2.1.0)
++set(BUHO_VERSION 2.1.1)
+ project(buho VERSION ${BUHO_VERSION})
+ 
+ set(CMAKE_CXX_STANDARD 17)
+-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror")
+ set(CMAKE_CXX_STANDARD_REQUIRED ON)
+ 
+ set(CMAKE_INCLUDE_CURRENT_DIR ON)
+diff --git a/src/views/notes/NotesView.qml b/src/views/notes/NotesView.qml
+index 7e403c5..a46fcc2 100644
+--- a/src/views/notes/NotesView.qml
++++ b/src/views/notes/NotesView.qml
+@@ -244,7 +244,7 @@ StackView
+             visible: count > 0
+             anchors.horizontalCenter: parent.horizontalCenter
+             width: Math.min(parent.width-(Maui.Style.space.medium*2), implicitWidth)
+-            padding: Maui.Style.space.big
++
+             maxListHeight: control.height - Maui.Style.space.medium
+             display: ToolButton.IconOnly
+ 
+-- 
+GitLab

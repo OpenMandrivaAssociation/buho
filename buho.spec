@@ -2,6 +2,7 @@ Name:		buho
 Version:	2.1.0
 Release:	1
 Source0:	https://invent.kde.org/maui/buho/-/archive/v%{version}/buho-v%{version}.tar.bz2
+Patch0:   https://invent.kde.org/maui/buho/-/commit/10cd927386bcee7f19f594c991ccf2bb80da0995.patch
 Group:		Applications/Productivity
 Summary:	Note taking app for Plasma Mobile
 License:	GPLv3
@@ -40,3 +41,4 @@ Note taking app for Plasma Mobile
 %{_bindir}/buho
 %{_datadir}/applications/org.kde.buho.desktop
 %{_datadir}/icons/hicolor/scalable/apps/buho.svg
+%{_datadir}/metainfo/org.kde.buho.metainfo.xml
