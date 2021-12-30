@@ -41,3 +41,4 @@ Note taking app for Plasma Mobile
 %{_bindir}/buho
 %{_datadir}/applications/org.kde.buho.desktop
 %{_datadir}/icons/hicolor/scalable/apps/buho.svg
+%{_datadir}/metainfo/org.kde.buho.metainfo.xml
