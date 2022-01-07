@@ -1,8 +1,9 @@
+%define snapshot 20220107
+
 Name:		buho
-Version:	2.1.0
-Release:	1
-Source0:	https://invent.kde.org/maui/buho/-/archive/v%{version}/buho-v%{version}.tar.bz2
-Patch0:   https://invent.kde.org/maui/buho/-/commit/10cd927386bcee7f19f594c991ccf2bb80da0995.patch
+Version:	2.1.1
+Release:	%{?snapshot:0.%{snapshot}.}1
+Source0:	https://invent.kde.org/maui/buho/-/archive/%{?snapshot:master}%{!?snapshot:v%{version}}/buho-%{?snapshot:master}%{!?snapshot:v%{version}}.tar.bz2%{?snapshot:#/buho-%{snapshot}.tar.bz2}
 Group:		Applications/Productivity
 Summary:	Note taking app for Plasma Mobile
 License:	GPLv3
@@ -28,7 +29,7 @@ BuildRequires:  cmake(MauiKitAccounts)
 Note taking app for Plasma Mobile
 
 %prep
-%autosetup -p1 -n %{name}-v%{version}
+%autosetup -p1 -n %{name}-%{?snapshot:master}%{!?snapshot:v%{version}}
 %cmake_kde5
 
 %build
