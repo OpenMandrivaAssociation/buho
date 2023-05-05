@@ -1,7 +1,7 @@
-%define snapshot 20220107
+#define snapshot 20220107
 
 Name:		buho
-Version:	2.1.1
+Version:	2.2.2
 Release:	%{?snapshot:0.%{snapshot}.}1
 Source0:	https://invent.kde.org/maui/buho/-/archive/%{?snapshot:master}%{!?snapshot:v%{version}}/buho-%{?snapshot:master}%{!?snapshot:v%{version}}.tar.bz2%{?snapshot:#/buho-%{snapshot}.tar.bz2}
 Group:		Applications/Productivity
@@ -9,6 +9,7 @@ Summary:	Note taking app for Plasma Mobile
 License:	GPLv3
 BuildRequires:	cmake(ECM)
 BuildRequires:	ninja
+BuildRequires:  cmake(Qt5DBus)
 BuildRequires:	cmake(Qt5Qml)
 BuildRequires:	cmake(Qt5Quick)
 BuildRequires:	cmake(Qt5Sql)
