@@ -39,7 +39,9 @@ Note taking app for Plasma Mobile
 %install
 %ninja_install -C build
 
-%files
+%find_lang buho
+
+%files -f buho.lang
 %{_bindir}/buho
 %{_datadir}/applications/org.kde.buho.desktop
 %{_datadir}/icons/hicolor/scalable/apps/buho.svg
