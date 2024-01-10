@@ -1,7 +1,7 @@
 #define snapshot 20220107
 
 Name:		buho
-Version:	3.0.0
+Version:	3.0.2
 Release:	%{?snapshot:0.%{snapshot}.}1
 Source0:	https://invent.kde.org/maui/buho/-/archive/%{?snapshot:master}%{!?snapshot:v%{version}}/buho-%{?snapshot:master}%{!?snapshot:v%{version}}.tar.bz2%{?snapshot:#/buho-%{snapshot}.tar.bz2}
 Group:		Applications/Productivity
@@ -22,9 +22,9 @@ BuildRequires:	cmake(KF5Notifications)
 BuildRequires:	cmake(KF5I18n)
 BuildRequires:	cmake(KF5Attica)
 BuildRequires:	cmake(KF5SyntaxHighlighting)
-BuildRequires:	cmake(MauiKit)
-BuildRequires:  cmake(MauiKitFileBrowsing)
-BuildRequires:  cmake(MauiKitAccounts)
+BuildRequires:	cmake(MauiKit3)
+BuildRequires:  cmake(MauiKitFileBrowsing3)
+BuildRequires:  cmake(MauiKitAccounts3)
 
 %description
 Note taking app for Plasma Mobile
