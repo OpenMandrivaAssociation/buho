@@ -1,7 +1,7 @@
 #define snapshot 20220107
 
 Name:		buho
-Version:	3.1.0
+Version:	4.0.0
 Release:	%{?snapshot:0.%{snapshot}.}1
 Source0:	https://invent.kde.org/maui/buho/-/archive/%{?snapshot:master}%{!?snapshot:v%{version}}/buho-%{?snapshot:master}%{!?snapshot:v%{version}}.tar.bz2%{?snapshot:#/buho-%{snapshot}.tar.bz2}
 Group:		Applications/Productivity
@@ -9,23 +9,23 @@ Summary:	Note taking app for Plasma Mobile
 License:	GPLv3
 BuildRequires:	cmake(ECM)
 BuildRequires:	ninja
-BuildRequires:  cmake(Qt5DBus)
-BuildRequires:	cmake(Qt5Qml)
-BuildRequires:	cmake(Qt5Quick)
-BuildRequires:	cmake(Qt5Sql)
-BuildRequires:	cmake(Qt5Svg)
-BuildRequires:	cmake(Qt5QuickControls2)
-BuildRequires:	cmake(Qt5WebView)
-BuildRequires:	cmake(KF5Config)
-BuildRequires:	cmake(KF5KIO)
-BuildRequires:	cmake(KF5Notifications)
-BuildRequires:	cmake(KF5I18n)
-BuildRequires:	cmake(KF5Attica)
-BuildRequires:	cmake(KF5SyntaxHighlighting)
-BuildRequires:	cmake(MauiKit3)
-BuildRequires:  cmake(MauiKitFileBrowsing3)
-BuildRequires:  cmake(MauiKitAccounts3)
-BuildRequires:  cmake(MauiKitTextEditor3)
+BuildRequires:  cmake(Qt6DBus)
+BuildRequires:	cmake(Qt6Qml)
+BuildRequires:	cmake(Qt6Quick)
+BuildRequires:	cmake(Qt6Sql)
+BuildRequires:	cmake(Qt6Svg)
+BuildRequires:	cmake(Qt6QuickControls2)
+BuildRequires:	cmake(Qt6WebView)
+BuildRequires:	cmake(KF6Config)
+BuildRequires:	cmake(KF6KIO)
+BuildRequires:	cmake(KF6Notifications)
+BuildRequires:	cmake(KF6I18n)
+BuildRequires:	cmake(KF6Attica)
+BuildRequires:	cmake(KF6SyntaxHighlighting)
+BuildRequires:	cmake(MauiKit4)
+BuildRequires:  cmake(MauiKitFileBrowsing4)
+BuildRequires:  cmake(MauiKitAccounts4)
+BuildRequires:  cmake(MauiKitTextEditor4)
 
 %description
 Note taking app for Plasma Mobile
