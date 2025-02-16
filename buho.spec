@@ -1,10 +1,10 @@
 #define snapshot 20220107
 
 Name:		buho
-Version:	4.0.0
+Version:	4.0.1
 Release:	%{?snapshot:0.%{snapshot}.}1
 Source0:	https://invent.kde.org/maui/buho/-/archive/%{?snapshot:master}%{!?snapshot:v%{version}}/buho-%{?snapshot:master}%{!?snapshot:v%{version}}.tar.bz2%{?snapshot:#/buho-%{snapshot}.tar.bz2}
-Patch0:   https://invent.kde.org/maui/buho/-/merge_requests/7.patch
+#Patch0:   https://invent.kde.org/maui/buho/-/merge_requests/7.patch
 Group:		Applications/Productivity
 Summary:	Note taking app for Plasma Mobile
 License:	GPLv3
