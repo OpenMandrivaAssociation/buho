@@ -1,7 +1,7 @@
 #define snapshot 20220107
 
 Name:		buho
-Version:	4.0.1
+Version:	4.0.2
 Release:	%{?snapshot:0.%{snapshot}.}1
 Source0:	https://invent.kde.org/maui/buho/-/archive/%{?snapshot:master}%{!?snapshot:v%{version}}/buho-%{?snapshot:master}%{!?snapshot:v%{version}}.tar.bz2%{?snapshot:#/buho-%{snapshot}.tar.bz2}
 #Patch0:   https://invent.kde.org/maui/buho/-/merge_requests/7.patch
